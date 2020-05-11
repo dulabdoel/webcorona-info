@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Live Report Covid19</title>
+</head>
+<header>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="nav-area">
+            <div class="container">
+                <a class="navbar-brand" href="#">Awasi Corona</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Case <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="imageVirus" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CoronaVirus</h5>
+                        <p>Global & Indonesia Live Case</p>
+                        <span>Live Case</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="imageMask" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Let's Take Care</h5>
+                        <p>Using Masker</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="imageHome" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Stay At Home</h5>
+                        <p>Still Alive</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+</header>
+<main>
+
+
+    <div class=" container pb-4">
+        <h2 class="p-4  text-center">Corona Virus Global & Indonesia Live Data</h2>
+        <div class="row ">
+            <div class="col-md-4 ">
+                <div class="bg-danger box mt-2 p-4 pt-5 rounded-top text-white">
+                    <div class="row ">
+                        <div class="col-md-6 ml-4">
+                            <h3>Positif :</h3>
+                            <h5 id="positif"></h5>
+                            <h4>Orang</h4>
+                        </div>
+                        <img id="imageSad" width="100px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="bg-success box mt-2 p-4 pt-5 rounded-top text-white">
+                    <div class="row">
+                        <div class="col-md-6 ml-4">
+                            <h3>Recovery :</h3>
+                            <h5 id="sembuh"></h5>
+                            <h4>Orang</h4>
+                        </div>
+                        <div>
+                            <img id="imagePositif" width="100px">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="bg-warning box mt-2 p-4 pt-5 rounded-top text-white">
+                    <div class="row">
+                        <div class="col-md-6 ml-4">
+                            <h3>Meningal :</h3>
+                            <h5 id="meninggal"></h5>
+                            <h4>Orang</h4>
+                        </div>
+                        <div>
+                            <img id="imageDead" width="100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="bg-primary box p-3 pt-5 rounded-top text-white">
+                    <div class="row ">
+                        <div class="col-md-3 ml-4">
+                            <h2>Indonesia</h2>
+                            <h5>Positif : <span id="indopositif"></span></h5>
+                            <h5>Meninggal: <span id="indodeath"></span></h5>
+                            <h5>Sembuh : <span id="indosembuh"></span></h5>
+                        </div>
+                        <div>
+                            <img id="imageFlag" width="150px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3 ">
+                <div class="bg-success box mt-2 p-4 pt-5 rounded-top text-white">
+                    <div class="row">
+                        <div class="col-md-6 ml-4">
+                            <h3>Kasus Meninggal Harian : <span id="kasusmati"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3 ">
+                <div class="bg-danger box mt-2 p-4 pt-5 rounded-top text-white">
+                    <div class="row">
+                        <div class="col-md-6 ml-4">
+                            <h3>Kasus Positif Harian : <span id="kasushari"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 offset-md-2 mt-2">
+                <div class="bg-dark box mt-2 p-4 pt-5 rounded-top text-white">
+                    <div class="row">
+                        <div class="col-md-6 ml-4">
+                            <h3>Kasus Aktif: <span id="kasusaktif"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table-element></table-element>
+    <search-bar></search-bar>
+    <corona-item></corona-item>
+    <footer-bar></footer-bar>
+</main>
+</body>
+
+</html>
